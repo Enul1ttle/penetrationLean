@@ -1,6 +1,6 @@
 ## Nmap常用操作
 - 对目标进行路由跟踪`nmap --traceroute 192.168.0.105`
-- C段在线状况`nmap -sP 192.168.0.100/24
+- C段在线状况`nmap -sP 192.168.0.100/24`
 - 系统指纹识别`nmap -O 192.168.0.105`
 - 开放端口对应的服务版本`nmap -sV 192.168.0.123`
 - 探测防火墙状态`nmap -sF -T4 192.168.0.100`
@@ -14,21 +14,21 @@
 - closed/filtered -->关闭的或被过滤，Nmap不能识别
 
 ## Nmap漏洞扫描
-- 漏洞脚本升级`nmap --script-updatedb
-- 应用弱口令探测`nmap --script=auth 192.168.0.105
-- 暴力破解攻击`nmap --script=brute 192.168.0.105
-- 扫描常见的漏洞`nmap --script=vuln 192.168.0.105
+- 漏洞脚本升级`nmap --script-updatedb`
+- 应用弱口令探测`nmap --script=auth 192.168.0.105`
+- 暴力破解攻击`nmap --script=brute 192.168.0.105`
+- 扫描常见的漏洞`nmap --script=vuln 192.168.0.105`
 - webdav远程执行漏洞扫描`nmap iis-buffer-overflow 192.168.0.105`
 - IIS<7.5 尝试短文件漏洞目录文件扫描`nmap -p80 -script http-iis-short-name-brute 192.168.0.105`
 - 针对目标主机使用所有脚本`nmap -T4 -A -sV -v3 -d -oATargetoutput --script all 192.168.0.105`
 
 ### Nmap Full Web Vulnerable Scan
-mkdir /usr/share/nmap/scripts/vulscan
-cd /usr/share/nmap/scrripts/vulscan
-wget http://www.computec.ch/projekte/vulscan/download/nmap_nse_vulscan-2.0.tar.gz && tar xzf nmap_nse_vulscan-2.0.tar.gz
-nmap -sS -sV –script=vulscan/vulscan.nse target
-nmap -sS -sV –script=vulscan/vulscan.nse –script-args vulscandb=scipvuldb.csv target
-nmap -sS -sV –script=vulscan/vulscan.nse –script-args vulscandb=scipvuldb.csv -p80 target
-nmap -PN -sS -sV –script=vulscan –script-args vulscancorrelation=1 -p80 target
-nmap -sV –script=vuln target
-nmap -PN -sS -sV –script=all –script-args vulscancorrelation=1 target
+- `mkdir /usr/share/nmap/scripts/vulscan`
+- `cd /usr/share/nmap/scrripts/vulscan`
+- `wget http://www.computec.ch/projekte/vulscan/download/nmap_nse_vulscan-2.0.tar.gz && tar xzf nmap_nse_vulscan-2.0.tar.gz`
+- `nmap -sS -sV –script=vulscan/vulscan.nse target`
+- `nmap -sS -sV –script=vulscan/vulscan.nse –script-args vulscandb=scipvuldb.csv target`
+- `nmap -sS -sV –script=vulscan/vulscan.nse –script-args vulscandb=scipvuldb.csv -p80 target`
+- `nmap -PN -sS -sV –script=vulscan –script-args vulscancorrelation=1 -p80 target`
+- `nmap -sV –script=vuln target`
+- `nmap -PN -sS -sV –script=all –script-args vulscancorrelation=1 target`
