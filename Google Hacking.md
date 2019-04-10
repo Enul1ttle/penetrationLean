@@ -26,4 +26,8 @@ filetype:txt filetype:bak filetype:sql       #敏感文件
 ```
 inurl:nqt.php intitle:"Network Query Tool"  #搜索网络查询工具
 filetype:txt  账号
+site:cn  intext:后台管理
 ```
+### 最后
+- 谷歌黑客数据库：https://www.exploit-db.com/google-hacking-database
+- 自动化工具：https://github.com/Smaash/snitch
