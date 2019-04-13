@@ -64,3 +64,9 @@ fsutil volume diskfree d: #查看D盘使用情况：第一行-->可用字节数,
 REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Terminal" "Server /v fDenyTSConnections /t REG_DWORD /d 0 /f   #开启端口
 REG query HKLM\SYSTEM\CurrentControlSet\Control\Terminal" "Server\WinStations\RDP-Tcp /v PortNumber          #查端口
 ```
+### 0x05 net view 命令 6118 报错
+环境：win 2008 x64
+```
+sc config Browser start= demand    #等于号后面是有一个空格的，这很重要
+sc start  Browser                  #启动服务
+```
