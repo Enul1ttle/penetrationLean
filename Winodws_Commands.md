@@ -45,6 +45,7 @@ logoff id    #注销用户
 rd/s/q    #盘符:\某个文件夹  （强制删除文件文件夹和文件夹内所有文件）
 del/f/s/q   #盘符:\文件名  （强制删除文件，文件名必须加文件后缀名）
 
+
 ```
 ### 0x02 文件查找
 ```
@@ -58,4 +59,8 @@ wmic process get name,executablepath  #查看程序安装目录
 c:\progra~1\winrar\rar.exe a -r  D:\WebRoot\1.rar D:\Tomcat 9.0\web\ #将D:\Tomcat 9.0\web\目录下的所有文件打包为1.rar
 fsutil volume diskfree d: #查看D盘使用情况：第一行-->可用字节数,第二行-->字节总数，第三行-->未用
 ```
-
+### 0x04 开启3389
+```
+REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Terminal" "Server /v fDenyTSConnections /t REG_DWORD /d 0 /f   #开启端口
+REG query HKLM\SYSTEM\CurrentControlSet\Control\Terminal" "Server\WinStations\RDP-Tcp /v PortNumber          #查端口
+```
