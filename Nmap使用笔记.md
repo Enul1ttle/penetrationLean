@@ -32,3 +32,11 @@
 - `nmap -PN -sS -sV –script=vulscan –script-args vulscancorrelation=1 -p80 target`
 - `nmap -sV –script=vuln target`
 - `nmap -PN -sS -sV –script=all –script-args vulscancorrelation=1 target`
+
+### 一些曾经遇到的问题
+#### 配合proxychains4 nmap 扫描对方内网的时候出现：
+```
+netutil.cc:1351: int collect_dnet_interfaces(const intf_entry*, void*): Assertion `rc == 0' failed 
+```
+vi /etc/proxychains.conf 注释掉proxy_dns
+扫描的时候一定要带上`-Pn`
