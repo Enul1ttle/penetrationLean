@@ -39,4 +39,5 @@
 netutil.cc:1351: int collect_dnet_interfaces(const intf_entry*, void*): Assertion `rc == 0' failed 
 ```
 vi /etc/proxychains.conf 注释掉proxy_dns
+
 扫描的时候一定要带上`-Pn`
