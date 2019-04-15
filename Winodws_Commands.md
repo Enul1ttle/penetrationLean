@@ -52,6 +52,13 @@ del/f/s/q   #盘符:\文件名  （强制删除文件，文件名必须加文件
 dir c:\windows\system32\*.dll | find "res"  #查找指定目录c:\windows\system32\下所有含有res文件名的dll文件
 WHERE /R c:\windows *.exe  #查找指定目录c:\windows 下所有的exe文件
 wmic process get name,executablepath  #查看程序安装目录
+
+dir /b /s config.* auth.* login* *.bak *.config *.ini >> info.txt
+findstr /si login *.xml *.aspx *.php *.py *.jsp *.asp *.action *.do *.ini *.txt *.cgi >> info.txt 
+findstr /si user *.xml *.aspx *.php *.py *.jsp *.asp *.action *.do *.ini *.txt *.cgi >> info.txt 
+findstr /si pass *.xml *.aspx *.php *.py *.jsp *.asp *.action *.do *.ini *.txt *.cgi >> info.txt
+findstr /si username *.xml *.aspx *.php *.py *.jsp *.asp *.action *.do *.ini *.txt *.cgi >> info.txt 
+findstr /si password *.xml *.aspx *.php *.py *.jsp *.asp *.action *.do *.ini *.txt *.cgi >> info.txt
 ```
 
 ### 0x03 文件打包
