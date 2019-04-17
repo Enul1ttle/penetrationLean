@@ -1,6 +1,7 @@
 https://www.cnblogs.com/backlion/p/9484949.html
 ```
 migrate pid         #进程注入
+run post/windows/manage/migrate #自动找合适的进程迁移
 getprivs            #尽可能获取尽可能多的特权
 getuid              #获得当前的权限
 idletime            #检查远程用户的空闲时长
