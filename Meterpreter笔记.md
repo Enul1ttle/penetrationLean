@@ -3,6 +3,7 @@ https://www.cnblogs.com/backlion/p/9484949.html
 migrate pid         #进程注入
 getprivs            #尽可能获取尽可能多的特权
 getuid              #获得当前的权限
+idletime            #检查远程用户的空闲时长
 getsystem           #通过各种攻击向量将一个管理帐户（通常为本地Administrator账户）提升为本地SYSTEM帐户
 getsystem –h        #升级权限SYSTEM账户
 background          #返回，把meterpreter后台挂起
