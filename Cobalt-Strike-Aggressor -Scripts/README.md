@@ -1,5 +1,5 @@
 ## CS 脚本收集与介绍
-https://github.com/rsmudge/ElevateKit
+https://mp.weixin.qq.com/s/CEI1XYkq2PZmYsP0DRU7jg
 ### 加载脚本
 左上角Cobalt Strike->Script Manager->Load
 ### 脚本介绍
