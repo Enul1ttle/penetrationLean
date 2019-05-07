@@ -18,8 +18,8 @@
 - 应用弱口令探测`nmap --script=auth 192.168.0.105`
 - 暴力破解攻击`nmap --script=brute 192.168.0.105`
 - 扫描常见的漏洞`nmap --script=vuln 192.168.0.105`
-- webdav远程执行漏洞扫描`nmap iis-buffer-overflow 192.168.0.105`
-- IIS<7.5 尝试短文件漏洞目录文件扫描`nmap -p80 -script http-iis-short-name-brute 192.168.0.105`
+- webdav远程执行漏洞扫描`nmap --script=http-iis-webdav-vuln 192.168.0.105`
+- IIS<7.5 尝试短文件漏洞目录文件扫描`nmap -p80 --script=http-iis-short-name-brute 192.168.0.105`
 - 针对目标主机使用所有脚本`nmap -T4 -A -sV -v3 -d -oATargetoutput --script all 192.168.0.105`
 - 检测域传送漏洞`
 nmap --script=dns-zone-transfer --script-args dns-zone-transfer.domain=xxx.com -p 53 -Pn dns.xxx.com`
