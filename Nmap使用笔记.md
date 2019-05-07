@@ -24,6 +24,11 @@
 - 检测域传送漏洞`
 nmap --script=dns-zone-transfer --script-args dns-zone-transfer.domain=xxx.com -p 53 -Pn dns.xxx.com`
 - 扫描SMB漏洞`nmap -v -p139,445 --script=smb-check-vulns --script-args=unsafe=1.1.1.1`
+### 增加script
+```
+https://github.com/cldrn/nmap-nse-scripts
+cp -rf scripts/* /usr/share/nmap/scripts/
+```
 ### Nmap Full Web Vulnerable Scan
 - `mkdir /usr/share/nmap/scripts/vulscan`
 - `cd /usr/share/nmap/scrripts/vulscan`
