@@ -27,6 +27,8 @@ filetype:txt filetype:bak filetype:sql       #敏感文件
 inurl:nqt.php intitle:"Network Query Tool"  #搜索网络查询工具
 filetype:txt  账号
 site:cn  intext:后台管理
+intitle:Password:  inurl:aspx  #密码重设页面
+intitle:aspxshell filetype:aspx  #查找webshell
 ```
 ### 最后
 - 谷歌黑客数据库：https://www.exploit-db.com/google-hacking-database
