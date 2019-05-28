@@ -13,7 +13,7 @@ cache           #显示页面缓存
 ```
 site:baidu.com -www    #搜索子域名
 intitle:index.of       #目录遍历
-error |waming          #错误信息
+error | warning         #错误信息
 login |logon           #后台
 username | userid |employee.ID | "your username is"  #用户名
 password |passcode |"your password is"  #密码
