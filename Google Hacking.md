@@ -29,7 +29,15 @@ filetype:txt  账号
 site:cn  intext:后台管理
 intitle:Password:  inurl:aspx  #密码重设页面
 intitle:aspxshell filetype:aspx  #查找webshell
+inurl:https://trello.com AND intext:@qq.com AND intext:password  #搜索trello.com 泄露的密码
+inurl:https://trello.com AND intext:ssh AND intext:password
+site:github.com AND intext:ftp AND intext:password
+site:www.example.com asmx/xml
 ```
 ### 最后
 - 谷歌黑客数据库：https://www.exploit-db.com/google-hacking-database
 - 自动化工具：https://github.com/Smaash/snitch
+### 补充
+多使用几个搜索引擎，比如baidu,bing，毕竟每个搜索引擎收集到的可能会不一样。bing（国际版）对越权目录有奇效
+
+
