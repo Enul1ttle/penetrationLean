@@ -34,6 +34,17 @@ inurl:https://trello.com AND intext:ssh AND intext:password
 site:github.com AND intext:ftp AND intext:password
 site:www.example.com asmx/xml
 ```
+### Google url 采集
+F12->console
+```
+var tag=document.getElementsByClassName('r');
+
+	for (var i=0;i<tag.length;i++){
+		var a=tag[i].getElementsByTagName("a");
+		console.log(a[0].href)
+	}
+```
+  
 ### 最后
 - 谷歌黑客数据库：https://www.exploit-db.com/google-hacking-database
 - 自动化工具：https://github.com/Smaash/snitch
