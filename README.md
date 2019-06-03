@@ -24,5 +24,5 @@
 - 注意查看网页注释,js等信息.可能含作者等信息,再继续对这些信息进行信息搜集.多注意公告栏,通知等信息.
 - 根据发布的内容对命名模式推断
 例如：发现一个viewuser.asp页面，然后就可以查找类似edituser.asp、adduser.asp和deleteuser.asp。如果/app/user目录被发现接着可以查找/app/admin 、/app/manager。之前搞的一个cx站，发现/weadmin/是后台目录，猜测管理员账号是weadmin，弱口令就进去了。
-- 注意额外不常见的或自定义的HTTP头,比如：debug=False   Server:BIG-IP（ 负载均衡）
+- 注意额外不常见的或自定义的HTTP头,比如：debug=False 、  Server:BIG-IP（ 负载均衡）
 - 随手在网页后面加old、~、bak、copy、orig 如index.asp.old
