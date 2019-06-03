@@ -14,6 +14,12 @@ nc.exe www.victim.com 80
 OPTIONS / HTTP/1.1
 Host: www.victim.com
 ```
+### 测试任意HTTP 方法
+```
+nc www.example.com 80
+JEFF /HTTP1.1
+```
+正常情况应该是返回405或501，要是返回200，尝试发起类似CSRF的攻击。
 ### 查看web服务信息
 ```
 nc.exe www.victim.com 80
