@@ -49,6 +49,6 @@ var tag=document.getElementsByClassName('r');
 - 谷歌黑客数据库：https://www.exploit-db.com/google-hacking-database
 - 自动化工具：https://github.com/Smaash/snitch
 ### 补充
-多使用几个搜索引擎，比如baidu,bing，毕竟每个搜索引擎收集到的可能会不一样。bing（国际版）对越权目录有奇效,360 搜索对inurl:支持在国产搜索中表现最好
+多使用几个搜索引擎，比如baidu,bing，毕竟每个搜索引擎收集到的可能会不一样。bing（国际版）对越权目录有奇效,360 搜索inurl:在国产搜索中表现最好
 
 
