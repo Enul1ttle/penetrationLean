@@ -11,4 +11,4 @@
 例如：发现一个viewuser.asp页面，然后就可以查找类似edituser.asp、adduser.asp和deleteuser.asp。如果/app/user目录被发现接着可以查找/app/admin 、/app/manager。之前搞的一个cx站，发现/weadmin/是后台目录，猜测管理员账号是weadmin，弱口令就进去了。
 - 注意额外不常见的或自定义的HTTP头,比如：debug=False 、  Server:BIG-IP（ 负载均衡）
 - 随手在网页后面加old、~、bak、copy、orig 如index.asp.old。如果是网站是iis7.5，尝试index.asp/.php 运气好能读取到源码(iis7.5解析漏洞)。
-- 利用User Agent Switcher切换不同的User Agent然后访问同一个特定页面。这是因为很多的Web应用对于不同的User-Agent和Referer请求头会返回不同的内容。
+- 利用`User Agent Switcher`切换不同的`User Agent`然后访问同一个特定页面。这是因为很多的Web应用对于不同的`User-Agent`和`Referer`请求头会返回不同的内容。
