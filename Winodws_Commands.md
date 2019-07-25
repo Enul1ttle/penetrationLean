@@ -77,3 +77,13 @@ REG query HKLM\SYSTEM\CurrentControlSet\Control\Terminal" "Server\WinStations\RD
 sc config Browser start= demand    #等于号后面是有一个空格的，这很重要
 sc start  Browser                  #启动服务
 ```
+### 0x06 数据库命令执行
+```
+①、分区数目：wmic diskdrive get partitions /value，只有一个分区，
+②、系统盘符：cd，系统盘符是C:
+③、寻找网站路径：c: & dir /s/b logo.png
+④、查看是否站库分离：select host_name()、select @@servername 结果一致，没有站库分离。
+⑤、IIS默认的网站目录是C:\Inetpub\wwwroot，看了一下~~~没有什么东西，应该是管理员重新配置了。
+⑥、bitsadmin文件下载，提示Unable to add file to job - 0x800704dd，说不能联网，感觉是当前账号权限过低~~~
+⑦、powershell文件下载，成功反弹
+```
