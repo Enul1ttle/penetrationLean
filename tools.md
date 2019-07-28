@@ -17,6 +17,7 @@ https://github.com/laramies/theHarvester     #邮箱采集
 ## Fuzz
 ```
 https://github.com/Mebus/cupp                #社工密码生成
+https://github.com/xmendez/wfuzz             #web fuzzing
 https://github.com/danielmiessler/SecLists   #fuzz字典
 
 ```
