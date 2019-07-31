@@ -27,7 +27,7 @@ filetype:txt filetype:bak filetype:sql       #敏感文件
 inurl:nqt.php intitle:"Network Query Tool"  #搜索网络查询工具
 filetype:txt  账号
 intitle:hacked by   #查找被黑的网站
-site:cn  intext:后台管理
+site:cn  intext:后台管理 | 登入
 intitle:Password:  inurl:aspx  #密码重设页面
 intitle:aspxshell filetype:aspx  #查找webshell
 inurl:https://trello.com AND intext:@qq.com AND intext:password  #搜索trello.com 泄露的密码
