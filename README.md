@@ -12,3 +12,5 @@
 - 注意额外不常见的或自定义的HTTP头,比如：debug=False 、  Server:BIG-IP（ 负载均衡）
 - 随手在网页后面加old、~、bak、copy、orig 如index.asp.old。如果是网站是iis7.5，尝试index.asp/.php 运气好能读取到源码(iis7.5解析漏洞)。
 - 利用`User Agent Switcher`切换不同的`User Agent`然后访问同一个特定页面。这是因为很多的Web应用对于不同的`User-Agent`和`Referer`请求头会返回不同的内容。
+- 火狐浏览器右键`View image info` 查看图片相关信息，有些编辑器上传点放在目录后面。
+- 登录框的js源码会找到很多意外收获。很多靠接口的运行的网站，看源码和js比爆破目录稳得多。
