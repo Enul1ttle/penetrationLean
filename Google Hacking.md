@@ -27,13 +27,19 @@ filetype:txt filetype:bak filetype:sql       #敏感文件
 inurl:nqt.php intitle:"Network Query Tool"  #搜索网络查询工具
 filetype:txt  账号
 intitle:hacked by   #查找被黑的网站
-site:cn  intext:后台管理 | 登入
 intitle:Password:  inurl:aspx  #密码重设页面
 intitle:aspxshell filetype:aspx  #查找webshell
 inurl:https://trello.com AND intext:@qq.com AND intext:password  #搜索trello.com 泄露的密码
 inurl:https://trello.com AND intext:ssh AND intext:password
 site:github.com AND intext:ftp AND intext:password
 site:www.example.com asmx/xml
+```
+### 查找后台
+```
+site:hackseo.net intext:管理|后台|登陆|用户名|密码|验证码|系统|帐号|manage|admin|login|system|登入|logon
+site:hackseo.net inurl:login|admin|manage|manager|admin_login|login_admin|system
+site:hackseo.net intitle:管理|后台|登陆|
+site:hackseo.net intext:验证码
 ```
 ### Google url 采集
 F12->console
