@@ -11,6 +11,7 @@ https://github.com/Tuhinshubhra/CMSeeK    #CMS检测
 ```
 https://github.com/maurosoria/dirsearch      #目录爆破
 https://github.com/lijiejie/subDomainsBrute  #子域名爆破
+https://github.com/p1g3/JSINFO-SCAN          #爬取js采集子域名
 https://github.com/aboul3la/Sublist3r        #子域名采集
 https://github.com/laramies/theHarvester     #邮箱采集
 ```
