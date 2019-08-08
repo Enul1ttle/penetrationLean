@@ -18,7 +18,7 @@ http://littlegreenfootballs.com/nqt.php?target=148.163.164.12
 http://whois.chinaz.com/reverse  #反差邮箱  
 ```
 ### 子域名采集
-不要嫌麻烦，每个方法都要试一遍。可能试玩所有也就比爆破的多一两个，但那多出来的子域名很大可能就是突破口。
+不要嫌麻烦，每个方法都要试一遍。可能试完所有的方法也就比爆破的多一两个，但那多出来的子域名很大可能就是突破口。
 ```
 - 域传送漏洞 
 `nmap --script dns-zone-transfer --script-args dns-zone-transfer.domain=http://test.com -p 53 -Pn 192.168.5.6`
@@ -29,7 +29,7 @@ https://github.com/p1g3/JSINFO-SCAN            #爬取js采集子域名
 https://github.com/aboul3la/Sublist3r          #子域名采集
 - SSL证书信息 https://censys.io/certificates?q=baidu.com
 - 搜索引擎（结合site语法，同时利用google的-、百度的-intitle等语法减少干扰）
-- 对已知ip的域名反查 https://passivedns.mnemonic.no/ 
+- 对已知ip的域名反查 https://passivedns.mnemonic.no/   
 - 一些公开查询平台(如：dnsdumpster.com)
 https://securitytrails.com/
 https://x.threatbook.cn
