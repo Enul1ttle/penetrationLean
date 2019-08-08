@@ -119,7 +119,6 @@ nmap -O -sV -sF -T4 {ip}
 webdav远程执行漏洞扫描：`nmap --script=http-iis-webdav-vuln {ip}`
 IIS<7.5 尝试短文件漏洞目录文件扫描：`nmap -p80 --script=http-iis-short-name-brute {ip}` 
 显示http的title信息，便于发现重要系统：`nmap --script=http-title  {ip}` 
-ftp匿名用户访问问题：‘nmap --script=
 心脏滴血漏洞：`nmap --script=ssl-heartbleed {ip} -p443 http-put`
 - 增强扩展
 https://github.com/vulnersCom/nmap-vulners
