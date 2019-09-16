@@ -29,7 +29,11 @@ https://github.com/p1g3/JSINFO-SCAN            #爬取js采集子域名
 https://github.com/aboul3la/Sublist3r          #子域名采集
 - SSL证书信息 https://censys.io/certificates?q=baidu.com
 - 搜索引擎（结合site语法，同时利用google的-、百度的-intitle等语法减少干扰）
-- 对已知ip的域名反查 https://passivedns.mnemonic.no/   
+- 对已知ip的域名反查
+https://passivedns.mnemonic.no/ 
+http://reverseip.domaintools.com/
+http://serversniff.net.ipaddress.com/
+https://www.robtex.com/
 - 一些公开查询平台(如：dnsdumpster.com)
 https://securitytrails.com/
 https://x.threatbook.cn
