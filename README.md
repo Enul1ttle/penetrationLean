@@ -14,8 +14,10 @@ IP地址段
 ### whois
 ```
 https://wq.apnic.net/static/search.html 
-http://littlegreenfootballs.com/nqt.php?target=148.163.164.12
+http://littlegreenfootballs.com/nqt.php?target=148.163.164.12  #这个能查edu这种域名
 http://whois.chinaz.com/reverse  #反差邮箱  
+https://www.reversewhois.io #反查邮箱，如果目标有邮服。比如@baidu.com 效果不错
+https://domaineye.com/ #反差邮箱注册人
 ```
 ### 子域名采集
 不要嫌麻烦，每个方法都要试一遍。可能试完所有的方法也就比爆破的多一两个，但那多出来的子域名很大可能就是突破口。
@@ -27,6 +29,8 @@ https://phpinfo.me/domain/                     #在线爆破
 https://github.com/lijiejie/subDomainsBrute    #子域名爆破
 https://github.com/p1g3/JSINFO-SCAN            #爬取js采集子域名
 https://github.com/aboul3la/Sublist3r          #子域名采集
+https://github.com/Screetsec/Sudomy            #这个集合各大开源平台，省时省力
+https://github.com/devanshbatham/ArchiveFuzz   #从 Web archiving 收集子域名，邮箱
 - SSL证书信息 https://censys.io/certificates?q=baidu.com
 - 搜索引擎（结合site语法，同时利用google的-、百度的-intitle等语法减少干扰）
 - 对已知ip的域名反查
@@ -80,7 +84,7 @@ whois -h whois.arin.net "e @ icann.org" | grep -E -o "\b[a-zA-Z0-9.-]+@[a-zA-Z0�
 https://github.com/m4ll0k/Infoga
 https://github.com/laramies/theHarvester
 - 社工裤泄露
-https://pwndb2am4tzkvold.onion.to/
+https://pwndb2am4tzkvold.onion.ws/ #洋葱网络
 - SSL证书信息 
 SSL / TLS证书通常包含域名，子域名和电子邮件地址。这使他们成为攻击者的宝库。
 https://censys.io/certificates?q=baidu.com
@@ -93,6 +97,7 @@ site:pastebin.com  AND intext:baidu.com
 site:searchcode.com  AND intext:baidu.com
 site:trello.com.com  AND intext:baidu.com
 - 网站历史数据爬取
+https://github.com/devanshbatham/ArchiveFuzz  
 https://github.com/melbadry9/WaybackUrls
 https://github.com/si9int/cc.py
 - 目录遍历
@@ -254,8 +259,11 @@ https://github.com/swisskyrepo/PayloadsAllTheThings
 https://github.com/Enul1ttle/myfuzz
 - 目录爆破
 https://github.com/maurosoria/dirsearch  
-- 网页爬虫
-`Burpsuit->Spider`
+- Burpsuit 插件
+Autorize  越权
+Wsdler  测试WSDL请求
+
+
 - waf探测
 https://github.com/7z1/waf_identify
 - 是否负载均衡
@@ -290,4 +298,4 @@ Openvas，Nessus
 - 利用User Agent Switcher切换不同的User Agent然后访问同一个特定页面。这是因为很多的Web应用对于不同的User-Agent和Referer请求头会返回不同的内容。
 ```
 ### 未完待续
-大佬说我的手法过于粗糙，容易引起管理员注意，看来很有很长的路要走。
+
