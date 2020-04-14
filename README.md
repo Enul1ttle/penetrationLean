@@ -311,6 +311,6 @@ Openvas，Nessus
 - 小密圈最干的货都放在公众号吸引流量了，花几百块的进圈不太值得
 ```
 #### 最后
-工作原因，估计不会再更新了，整理别人的东西没太大意义。一年前，干了十年渗透的大佬跟我说这是真大牛写的文章https://www.freebuf.com/articles/neopoints/190895.html，现在回头看确实受益匪浅。特别是https://pentester.land/和推特搜索 #bugbountytips 能学到不少大佬挖洞的技巧。还有就是看乌云镜像和hackone的挖洞过程。
+工作原因，估计不会再更新了，整理别人的东西没太大意义。一年前，干了十年渗透的大佬跟我说这是真大牛写的文章`https://www.freebuf.com/articles/neopoints/190895.html`，现在回头看确实受益匪浅。特别是`https://pentester.land/`和推特搜索 `#bugbountytips` 能学到不少大佬挖洞的技巧。还有就是看乌云镜像和hackone的挖洞过程。
 
 
