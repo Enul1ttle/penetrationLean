@@ -26,11 +26,13 @@ https://domaineye.com/ #反差邮箱注册人
 `nmap --script dns-zone-transfer --script-args dns-zone-transfer.domain=http://test.com -p 53 -Pn 192.168.5.6`
 - 暴力猜解（常见域名字典、根据企业特点对字典做变形、循环遍历多级域名）
 https://phpinfo.me/domain/                     #在线爆破
+https://subdomainfinder.c99.nl                 #在线查找
 https://github.com/lijiejie/subDomainsBrute    #子域名爆破
 https://github.com/p1g3/JSINFO-SCAN            #爬取js采集子域名
 https://github.com/aboul3la/Sublist3r          #子域名采集
 https://github.com/Screetsec/Sudomy            #这个集合各大开源平台，省时省力
 https://github.com/devanshbatham/ArchiveFuzz   #从 Web archiving 收集子域名，邮箱
+http://dns.bufferover.run/dns?q=baidu.com      #opendata.rapid7 
 - SSL证书信息 https://censys.io/certificates?q=baidu.com
 - 搜索引擎（结合site语法，同时利用google的-、百度的-intitle等语法减少干扰）
 - 对已知ip的域名反查
@@ -257,12 +259,13 @@ https://github.com/Stardustsky/SaiDict
 https://github.com/TheKingOfDuck/fuzzDicts
 https://github.com/swisskyrepo/PayloadsAllTheThings
 https://github.com/Enul1ttle/myfuzz
+- 备份扫描
+https://github.com/tismayil/ohmybackup
 - 目录爆破
 https://github.com/maurosoria/dirsearch  
 - Burpsuit 插件
 Autorize  越权
 Wsdler  测试WSDL请求
-
 
 - waf探测
 https://github.com/7z1/waf_identify
@@ -286,16 +289,27 @@ Openvas，Nessus
 - 相对路径搜索
 火狐浏览器右键`view image info`查看网页图片的相关信息，有些目录编辑器上传点放在后台目录后面。
 - JS敏感信息泄露
-`Firebug->Script`登陆框的js会着找到很多意外收获，可能某些链接存在未授权访。
+`Firebug->Script`登陆框的js会着找到很多意外收获，可能某些链接存在未授权访。某次查看js文件，发现post userid=xxxx&weixinlog=1就能绕过密码登陆。还是使用范围很广的缴费系统。
 - Network模块信息收集
 查看http返回包，有时候能看到中间件的版本，webserver信息对于渗透来说是很重要的，通过获取的版本即可查找对应的漏洞进行利用，从而提高渗透的效率！查看cookie,如果你发现cookie中含有admin=0,或者flag=0的这类标志，你就可以使用burpsuit进行抓包进行截断改包，将0改为1可能就可以直接进入到系统中了。个人觉得只要是不常见的cookie标志，或者任何能输入的地方都可以使用Burpsuit Fuzzing试试。
+- 细心很重要，当工具都识别不出事什么cms的时候，某次我看到x-ux.admin.css,就去百度搜，果然是一个基于thinkphp3.2.8开发的后台框架，刚想代码审计，就发现他直接用了百度WebUploader未授权上传的插件。
 ```
 #### 浏览网页
 ```
 - 注意公告栏，通知等信息。
 - 根据发布的内容对命名模式推断 例如：发现一个viewuser.asp页面，然后就可以查找类似edituser.asp、adduser.asp和deleteuser.asp。如果/app/user目录被发现接着可以查找/app/admin 、/app/manager。
-- 随手在网页后面加old、\~、bak、copy、orig 如index.asp.old。如果是网站是iis7.5，尝试index.asp/.php 运气好能读取到源码(iis7.5解析漏洞)。
+- 随手在网页后面加old、\~、bak、copy、orig 如config.asp.old。如果是网站是iis7.5，尝试config.asp/.php 运气好能读取到源码(iis7.5解析漏洞)。
 - 利用User Agent Switcher切换不同的User Agent然后访问同一个特定页面。这是因为很多的Web应用对于不同的User-Agent和Referer请求头会返回不同的内容。
 ```
-### 未完待续
+#### 杂
+```
+- 安卓反编译里的osskey是真的多，可以搜secret，但有些是直接key=，id=,这种可以直接正则搜\w{20,50}$
+- 搭环境代码审计白盒测试的时候，开启mysql报错日志监控很重要，能发现一些隐蔽的盲注。
+- https://regex101.com/    正则在线调试
+- http://get-av.se7ensec.cn    Windows杀软在线对比辅助
+- https://jsonwebtoken.io       jwt在线解码
+- 小密圈最干的货都放在公众号吸引流量了，花几百块的进圈不太值得
+- 工作原因，估计不会再更新了，整理别人的东西没太大意义。一年前，干了十年渗透的大佬跟我说这是真大牛写的文章https://www.freebuf.com/articles/neopoints/190895.html，现在回头看确实受益匪浅。特别是https://pentester.land/和推特搜索 #bugbountytips 能学到不少大佬挖洞的技巧。还有就是看乌云镜像和hackone的挖洞过程。
+```
+
 
