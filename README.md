@@ -292,7 +292,7 @@ Openvas，Nessus
 `Firebug->Script`登陆框的js会着找到很多意外收获，可能某些链接存在未授权访。某次查看js文件，发现post userid=xxxx&weixinlog=1就能绕过密码登陆。还是使用范围很广的缴费系统。
 - Network模块信息收集
 查看http返回包，有时候能看到中间件的版本，webserver信息对于渗透来说是很重要的，通过获取的版本即可查找对应的漏洞进行利用，从而提高渗透的效率！查看cookie,如果你发现cookie中含有admin=0,或者flag=0的这类标志，你就可以使用burpsuit进行抓包进行截断改包，将0改为1可能就可以直接进入到系统中了。个人觉得只要是不常见的cookie标志，或者任何能输入的地方都可以使用Burpsuit Fuzzing试试。
-- 细心很重要，当工具都识别不出事什么cms的时候，某次我看到x-ux.admin.css,就去百度搜，果然是一个基于thinkphp3.2.8开发的后台框架，刚想代码审计，就发现他直接用了百度WebUploader未授权上传的插件。
+- 细心很重要，当工具都识别不出是什么cms的时候，某次开局一个后台登陆框，我看到x-ux.admin.css,就去百度搜，果然是一个基于thinkphp3.2.8开发的后台框架，刚想代码审计，发现他用了百度WebUploader未授权上传的插件。
 ```
 #### 浏览网页
 ```
